@@ -23,7 +23,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh 'ansible-playbook /etc/ansible/playbooks/spring-boot-deploy.yaml --extra-vars \'project=micro-core-gateway\''
+        sh 'ansible-playbook /etc/ansible/playbooks/spring-boot-deploy.yaml --extra-vars \'project=micro-server-user rpc=true\''
       }
     }
   }
