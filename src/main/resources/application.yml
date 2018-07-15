@@ -1,7 +1,7 @@
 # 数据库 配置
 spring:
   datasource:
-    url: jdbc:mysql://mysql:3306/user
+    url: jdbc:mysql://mysql:3306/user?characterEncoding=utf8&useSSL=true
     username: root
     password: anoyi.com
   jpa:
@@ -13,8 +13,6 @@ spring:
     port: 6666
   session:
     store-type: redis
-  application:
-    name: server-user
   redis:
     host: redis
     port: 6379
@@ -22,4 +20,4 @@ spring:
 server:
   servlet:
     session:
-      timeout: 30d
+      timeout: 30m
