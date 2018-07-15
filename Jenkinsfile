@@ -23,7 +23,9 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh 'ansible-playbook /etc/ansible/playbooks/spring-boot-deploy.yaml --extra-vars \'project=micro-server-user rpc=true\''
+        sh '''ansible-playbook /etc/ansible/playbooks/spring-boot-deploy.yaml \\
+--extra-vars project=$PROJECT \\
+--extra-vars rpcPort=6666 '''
       }
     }
   }
