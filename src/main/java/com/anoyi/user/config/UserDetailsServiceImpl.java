@@ -1,7 +1,7 @@
 package com.anoyi.user.config;
 
 import com.anoyi.user.entity.User;
-import com.anoyi.user.service.UserService;
+import com.anoyi.user.service.UserServiceImpl;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -14,13 +14,13 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     private final static String ROLE_TAG = "USER";
 
-    private final UserService userService;
+    private final UserServiceImpl userService;
 
     @Override
-    public UserDetails loadUserByUsername(String name) throws UsernameNotFoundException {
-        User user = userService.findByName(name);
+    public UserDetails loadUserByUsername(String id) throws UsernameNotFoundException {
+        User user = userService.selectById(Integer.valueOf(id));
         if (user == null) {
-            throw new UsernameNotFoundException("name: " + name);
+            throw new UsernameNotFoundException("userId: " + id);
         }
         return createUserPrincipal(user);
     }
@@ -28,7 +28,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     private UserDetails createUserPrincipal(User user) {
         // 用户认证（用户名，密码，权限）
         return org.springframework.security.core.userdetails.User.builder()
-                .username(user.getName())
+                .username(String.valueOf(user.getId()))
                 .password("{noop}" + user.getPassword())
                 .roles(ROLE_TAG).build();
     }

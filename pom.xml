@@ -4,7 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.anoyi.server</groupId>
-    <artifactId>user</artifactId>
+    <artifactId>userDTO</artifactId>
+    <packaging>jar</packaging>
     <version>0.0.1-SNAPSHOT</version>
 
     <name>user</name>
@@ -13,7 +14,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.2.RELEASE</version>
+        <version>2.0.3.RELEASE</version>
         <relativePath/>
     </parent>
 
@@ -28,6 +29,12 @@
         <dependency>
             <groupId>com.anoyi.server</groupId>
             <artifactId>common</artifactId>
+            <version>1.0.0.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.anoyi.server</groupId>
+            <artifactId>api-user</artifactId>
             <version>1.0.0.RELEASE</version>
         </dependency>
 
@@ -66,12 +73,6 @@
         <dependency>
             <groupId>org.springframework.session</groupId>
             <artifactId>spring-session-data-redis</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.16.20</version>
         </dependency>
 
         <dependency>
