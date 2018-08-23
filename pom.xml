@@ -14,7 +14,6 @@
         <groupId>com.anoyi</groupId>
         <artifactId>micro-boot-starter-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath/>
     </parent>
 
     <properties>
@@ -88,6 +87,28 @@
         </dependency>
 
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>libs-release</id>
+            <url>https://mvn.anoyi.com/artifactory/libs-release</url>
+        </repository>
+        <repository>
+            <id>libs-snapshot</id>
+            <url>https://mvn.anoyi.com/artifactory/libs-snapshot</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>libs-release</id>
+            <url>https://mvn.anoyi.com/artifactory/plugins-release</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>libs-snapshot</id>
+            <url>https://mvn.anoyi.com/artifactory/plugins-snapshot</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <build>
         <plugins>
