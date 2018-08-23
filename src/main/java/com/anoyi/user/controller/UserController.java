@@ -1,7 +1,7 @@
 package com.anoyi.user.controller;
 
 import com.anoyi.user.entity.User;
-import com.anoyi.user.service.UserServiceImpl;
+import com.anoyi.user.service.impl.UserServiceImpl;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

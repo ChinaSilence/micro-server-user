@@ -22,9 +22,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="common" />
-    <orderEntry type="library" name="Maven: com.anoyi.server:api-user:1.0.0.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.16.22" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.0.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.0.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.0.3.RELEASE" level="project" />
@@ -79,32 +76,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.0.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aspects:5.0.7.RELEASE" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: mysql:mysql-connector-java:5.1.46" level="project" />
-    <orderEntry type="library" name="Maven: com.anoyi:spring-boot-starter-grpc:1.0.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: io.grpc:grpc-netty:1.11.0" level="project" />
-    <orderEntry type="library" name="Maven: io.grpc:grpc-core:1.11.0" level="project" />
-    <orderEntry type="library" name="Maven: io.grpc:grpc-context:1.11.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.5" level="project" />
-    <orderEntry type="library" name="Maven: com.google.errorprone:error_prone_annotations:2.1.2" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: io.opencensus:opencensus-api:0.11.0" level="project" />
-    <orderEntry type="library" name="Maven: io.opencensus:opencensus-contrib-grpc-metrics:0.11.0" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-codec-http2:4.1.25.Final" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-codec-http:4.1.25.Final" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-handler-proxy:4.1.25.Final" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-codec-socks:4.1.25.Final" level="project" />
-    <orderEntry type="library" name="Maven: io.grpc:grpc-protobuf:1.11.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.5.1" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:guava:20.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java-util:3.5.1" level="project" />
-    <orderEntry type="library" name="Maven: com.google.api.grpc:proto-google-common-protos:1.0.0" level="project" />
-    <orderEntry type="library" name="Maven: io.grpc:grpc-protobuf-lite:1.11.0" level="project" />
-    <orderEntry type="library" name="Maven: io.grpc:grpc-stub:1.11.0" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.0.3.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: io.protostuff:protostuff-core:1.6.0" level="project" />
-    <orderEntry type="library" name="Maven: io.protostuff:protostuff-api:1.6.0" level="project" />
-    <orderEntry type="library" name="Maven: io.protostuff:protostuff-runtime:1.6.0" level="project" />
-    <orderEntry type="library" name="Maven: io.protostuff:protostuff-collectionschema:1.6.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-redis:2.0.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-redis:2.0.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-keyvalue:2.0.8.RELEASE" level="project" />
@@ -128,6 +99,35 @@
     <orderEntry type="library" name="Maven: io.micrometer:micrometer-core:1.0.5" level="project" />
     <orderEntry type="library" name="Maven: org.hdrhistogram:HdrHistogram:2.1.10" level="project" />
     <orderEntry type="library" name="Maven: org.latencyutils:LatencyUtils:2.0.3" level="project" />
+    <orderEntry type="module" module-name="common" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.46" level="project" />
+    <orderEntry type="library" name="Maven: com.anoyi:spring-boot-starter-grpc:2.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: io.grpc:grpc-netty:1.14.0" level="project" />
+    <orderEntry type="library" name="Maven: io.grpc:grpc-core:1.14.0" level="project" />
+    <orderEntry type="library" name="Maven: io.grpc:grpc-context:1.14.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.5" level="project" />
+    <orderEntry type="library" name="Maven: com.google.errorprone:error_prone_annotations:2.1.2" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:3.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opencensus:opencensus-api:0.12.3" level="project" />
+    <orderEntry type="library" name="Maven: io.opencensus:opencensus-contrib-grpc-metrics:0.12.3" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-codec-http2:4.1.25.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-codec-http:4.1.25.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-handler-proxy:4.1.25.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-codec-socks:4.1.25.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.grpc:grpc-protobuf:1.14.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.5.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:20.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.api.grpc:proto-google-common-protos:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.grpc:grpc-protobuf-lite:1.14.0" level="project" />
+    <orderEntry type="library" name="Maven: io.grpc:grpc-stub:1.14.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.0.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: io.protostuff:protostuff-core:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: io.protostuff:protostuff-api:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: io.protostuff:protostuff-runtime:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: io.protostuff:protostuff-collectionschema:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.47" level="project" />
+    <orderEntry type="module" module-name="rpc-user" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter-config:2.0.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter:2.0.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-context:2.0.0.RELEASE" level="project" />

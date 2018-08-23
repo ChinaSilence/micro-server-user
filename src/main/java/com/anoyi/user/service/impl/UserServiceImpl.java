@@ -1,9 +1,9 @@
-package com.anoyi.user.service;
+package com.anoyi.user.service.impl;
 
-import com.anoyi.server.api.user.domain.UserDTO;
-import com.anoyi.server.api.user.service.UserService;
+import com.anoyi.server.rpc.user.domain.UserDTO;
 import com.anoyi.user.entity.User;
 import com.anoyi.user.repository.UserRepository;
+import com.anoyi.user.service.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;

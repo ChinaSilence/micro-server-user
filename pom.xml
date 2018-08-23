@@ -4,18 +4,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.anoyi.server</groupId>
-    <artifactId>userDTO</artifactId>
+    <artifactId>micro-server-user</artifactId>
     <packaging>jar</packaging>
     <version>0.0.1-SNAPSHOT</version>
 
     <name>user</name>
-    <description>user project for miroservice</description>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.3.RELEASE</version>
-        <relativePath/>
+        <groupId>com.anoyi</groupId>
+        <artifactId>micro-boot-starter-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
 
     <properties>
@@ -26,18 +24,7 @@
 
     <dependencies>
 
-        <dependency>
-            <groupId>com.anoyi.server</groupId>
-            <artifactId>common</artifactId>
-            <version>1.0.0.RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.anoyi.server</groupId>
-            <artifactId>api-user</artifactId>
-            <version>1.0.0.RELEASE</version>
-        </dependency>
-
+        <!-- Spring Boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -51,18 +38,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.anoyi</groupId>
-            <artifactId>spring-boot-starter-grpc</artifactId>
-            <version>1.0.2.RELEASE</version>
         </dependency>
 
         <dependency>
@@ -80,6 +55,31 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
+        <!-- Base -->
+        <dependency>
+            <groupId>com.anoyi</groupId>
+            <artifactId>micro-boot-common</artifactId>
+        </dependency>
+
+        <!-- MySQL -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <!-- RPC -->
+        <dependency>
+            <groupId>com.anoyi</groupId>
+            <artifactId>spring-boot-starter-grpc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.anoyi.server</groupId>
+            <artifactId>rpc-user</artifactId>
+            <version>${rpc-user.version}</version>
+        </dependency>
+
+        <!-- Config -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
@@ -87,20 +87,6 @@
         </dependency>
 
     </dependencies>
-
-    <repositories>
-        <repository>
-            <id>libs-release</id>
-            <url>https://mvn.anoyi.com/artifactory/libs-release</url>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>libs-release</id>
-            <url>https://mvn.anoyi.com/artifactory/plugins-release</url>
-        </pluginRepository>
-    </pluginRepositories>
 
     <build>
         <plugins>

@@ -1,7 +1,7 @@
 package com.anoyi.user.config;
 
 import com.anoyi.user.entity.User;
-import com.anoyi.user.service.UserServiceImpl;
+import com.anoyi.user.service.impl.UserServiceImpl;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
