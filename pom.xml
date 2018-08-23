@@ -90,23 +90,34 @@
 
     <repositories>
         <repository>
-            <id>libs-release</id>
+            <id>central</id>
             <url>https://mvn.anoyi.com/artifactory/libs-release</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
         </repository>
         <repository>
-            <id>libs-snapshot</id>
+            <id>snapshots</id>
             <url>https://mvn.anoyi.com/artifactory/libs-snapshot</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
         </repository>
     </repositories>
-
     <pluginRepositories>
         <pluginRepository>
-            <id>libs-release</id>
+            <id>central</id>
             <url>https://mvn.anoyi.com/artifactory/plugins-release</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
         </pluginRepository>
         <pluginRepository>
-            <id>libs-snapshot</id>
+            <id>snapshots</id>
             <url>https://mvn.anoyi.com/artifactory/plugins-snapshot</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
         </pluginRepository>
     </pluginRepositories>
 
