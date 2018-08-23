@@ -25,7 +25,10 @@ pipeline {
       steps {
         sh '''ansible-playbook /etc/ansible/playbooks/spring-boot-deploy.yaml \\
 --extra-vars project=$PROJECT \\
---extra-vars rpcPort=6666 '''
+--extra-vars rpcPort=6565 \\
+--extra-vars app_name=$PROJECT \\
+--extra-vars app_label=$GIT_BRANCH
+'''
       }
     }
   }
