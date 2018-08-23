@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>user</name>
+    <name>micro-server-user</name>
 
     <parent>
         <groupId>com.anoyi</groupId>
