@@ -33,6 +33,6 @@ pipeline {
     }
   }
   environment {
-    PROJECT = 'micro-server-userDTO'
+    PROJECT = 'micro-server-user'
   }
 }
