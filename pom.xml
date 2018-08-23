@@ -14,6 +14,7 @@
         <groupId>com.anoyi</groupId>
         <artifactId>micro-boot-starter-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath/>
     </parent>
 
     <properties>
