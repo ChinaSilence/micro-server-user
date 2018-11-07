@@ -13,8 +13,8 @@
     </parent>
 
     <artifactId>micro-server-user</artifactId>
-    <packaging>jar</packaging>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <dependencies>
 
